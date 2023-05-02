@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phishing Detector</title>
+  </head>
+  <body>
+    <h1>Phishing Detector</h1>
+    {% if prediction_text %}
+    <p>{{ prediction_text }}</p>
+    {% endif %}
+    <p><a href="{{ url_for('formpg') }}">Check another URL</a></p>
+    <p><a href="{{ url_for('home') }}">Back to Home</a></p>
+  </body>
+</html>
